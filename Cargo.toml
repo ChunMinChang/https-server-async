@@ -1,0 +1,18 @@
+[package]
+name = "https-server-async"
+version = "0.1.0"
+authors = ["Chun-Min Chang <chun.m.chang@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3"
+async-std = "1.5"
+rustls = "0.19"
+argh = "0.1"
+
+[dependencies.async-tls]
+version = "0.11"
+default-features = false
+features = ["server"]
